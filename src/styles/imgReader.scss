@@ -1,0 +1,17 @@
+@import "BaseFunctionSass";
+
+.imgReader{
+  text-align: center;
+  margin-top: pxRem(18);
+  background: white;
+  @extend %indexPadding;
+  .imgReader_pic {
+    width: pxRem(370px);
+    height: pxRem(370px);
+    padding: pxRem(125px) 0 pxRem(100px) 0;
+  }
+  .imgReader_text {
+    font-size: $font28;
+    padding: 0 pxRem(60);
+  }
+}

@@ -1,9 +1,24 @@
 @import 'BaseFunctionSass';
 
+.employess{
+	background: white;
+	@extend %indexPadding
+}
 .employess_pic{
-	width:pxRem(400px);
+	width:pxRem(163px);
+	height: pxRem(163px);
 	float: left;
 }
 .employess_info {
-	margin-left: pxRem(500px)
+	margin-left: pxRem(170px)
+}
+.employess_info_name {
+	font-size: $font32;
+	padding-bottom: pxRem(16);
+	border-bottom: 1px solid #d7d7d7;
+}
+.employess_info_content {
+	padding-top: pxRem(16);
+	font-size: $font26;
+	color: #777777;
 }

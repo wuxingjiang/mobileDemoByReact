@@ -11,13 +11,15 @@ class EmployeeInfoCard extends React.Component {
     		imgSrc = require('../images/yeoman.png');
     	}
         return (
-        		<div>
+        		<div className="employess">
         			<img className = 'employess_pic' src = {imgSrc}/>
         			<div className = 'employess_info'>
-        				<p> {this.props.baseInfo.tel}</p>
-        				<p> {this.props.baseInfo.name}</p>
-        				<p> {this.props.baseInfo.desc}</p>
-        				<p> {this.props.baseInfo.time}</p>
+        				<p className="employess_info_name"> {this.props.baseInfo.name}</p>
+						<div className="employess_info_content">
+							<p> 服务单号：{this.props.baseInfo.orderNo}</p>
+							<p> 服务类型：{this.props.baseInfo.desc}</p>
+							<p> 服务时间：{this.props.baseInfo.time}</p>
+						</div>
         			</div>
         		</div>
         	);
@@ -29,9 +31,10 @@ EmployeeInfoCard.defaultProps = {
 		pic: '',
 		tel: '18161264800',
 		name: '张三',
-		desc:'客户回访/担保交易推广',
-		time:'2016-12-31'
+		desc:'客户回访/担保交易推广/保险推广',
+		time:'2016-12-31 12:33',
+		orderNo: 645645678
 	}
-}
+};
 
 export default EmployeeInfoCard;

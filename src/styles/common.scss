@@ -1,8 +1,6 @@
 
 
-$font32: pxRem(32);
-$font28: pxRem(28);
-$font24: pxRem(24);
+
 
 @function zIndex($zindex) {
   @return $zindex * 10
